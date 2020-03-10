@@ -4,6 +4,7 @@ import Footer from './Footer';
 import ShopppingCart from './ShoppingCart';
 import './App.css';
 import AddItem from './AddItem';
+import TotalValue from './TotalValue';
 
 
 
@@ -62,6 +63,7 @@ class App extends Component {
       <div className="App">
         <Header title={this.props.headerTit} />
         <ShopppingCart title={this.props.mainTit} items={this.state.cartItems} />
+        <TotalValue items={this.state.cartItems}/>
         <AddItem products={this.state.products} addItem={this.addItem}></AddItem>
         <Footer copyright={this.props.footerTit} />
 

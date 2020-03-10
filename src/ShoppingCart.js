@@ -3,14 +3,14 @@ import CartItem from './CartItem';
 
 const ShoppingCart = ({ title, items }) => {
 
-console.log('shoppingcart items:',items);
+
 const createItems = (items) => {
 const cartItems =  items.map(item => <CartItem key={item.id} item={item}/>);
 return cartItems;
 }
 
     return (
-        <div className="container mb-5">
+        <div className="container mb-3">
             <h1>{title}</h1>
             <div className="list-group">
                 <div className="list-group-item">
